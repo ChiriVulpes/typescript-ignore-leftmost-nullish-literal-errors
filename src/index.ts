@@ -12,7 +12,7 @@ export default {
 		if (!isNullishLiteral(left) || !isLeftmostNullishCoalesceOperand(node))
 			return;
 
-		api.removeNodeDiagnostics();
+		api.removeNodeDiagnostics(left);
 	},
 	// transformSourceFile (sourceFile) {
 	// 	(sourceFile as any).statements = ts.setTextRangePosEnd([
